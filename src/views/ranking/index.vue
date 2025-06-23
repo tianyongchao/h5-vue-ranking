@@ -2,6 +2,16 @@
   <div class="ranking-page">
     <!-- 顶部Banner -->
     <div class="banner">
+      <div class="count-down">
+        <van-count-down :time="time">
+          <template #default="timeData">
+            <span class="days">{{ timeData.days }}</span>
+            <span class="hours">{{ timeData.hours }}</span>
+            <span class="minutes">{{ timeData.minutes }}</span>
+            <span class="seconds">{{ timeData.seconds }}</span>
+          </template>
+        </van-count-down>
+      </div>
       <img class="banner-bg" src="@/assets/img/ranking/header-countdown.png" alt="banner" />
     </div>
 
@@ -54,6 +64,7 @@ export default {
   components: { RuleModal, RewardModal },
   data() {
     return {
+      time: 30 * 60 * 60 * 1000,
       showRule: false,
       showReward: false,
       rankingList: Array(5).fill().map((_, i) => ({
@@ -74,9 +85,49 @@ export default {
 }
 
 .banner {
+  position: relative;
   height: 628px;
-
+  .count-down {
+  }
+  .seconds {
+    font-size: 24px;
+    opacity: 0.8;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    right: 206px;
+    top: 290px;
+  }
+  .minutes {
+    font-size: 24px;
+    opacity: 0.8;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    right: 37%;
+    top: 46.8%;
+  }
+  .hours {
+    font-size: 24px;
+    opacity: 0.8;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    right: 48%;
+    top: 47.5%;
+  }
+  .days {
+    font-size: 24px;
+    opacity: 0.8;
+    color: #fff;
+    z-index: 1;
+    position: absolute;
+    right: 58%;
+    top: 48.1%;
+  }
   &-bg {
+    top: 0;
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;

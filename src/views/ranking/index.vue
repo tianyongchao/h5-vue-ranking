@@ -154,6 +154,7 @@ export default {
 }
 
 .ranking-item {
+  font-style: italic;
   display: flex;
   align-items: center;
   height: 145px;

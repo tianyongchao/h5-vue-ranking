@@ -28,7 +28,7 @@
                 </div>
               </div>
               <div class="reward-text">专属奖励6字</div>
-              <div>价值123456</div>
+              <div class="reward-value">价值123456</div>
             </div>
           </div>
 
@@ -50,7 +50,7 @@
                 </div>
               </div>
               <div class="reward-text">专属奖励6字</div>
-              <div>价值123456</div>
+              <div class="reward-value">价值123456</div>
             </div>
           </div>
 
@@ -72,12 +72,12 @@
                 </div>
               </div>
               <div class="reward-text">专属奖励6字</div>
-              <div>价值123456</div>
+              <div class="reward-value">价值123456</div>
             </div>
             <div class="st3-wrap">
               <div class="st3-item"></div>
               <div class="reward-text">专属奖励6字</div>
-              <div>价值123456</div>
+              <div class="reward-value">价值123456</div>
             </div>
           </div>
 
@@ -235,12 +235,13 @@ export default {
   text-align: center;
 
   img {
-    width: 201px;
+    width: 121px;
     // height: 70px;
   }
 }
 
 .reward-wrap {
+  font-size: 20px;
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
@@ -250,15 +251,15 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     background-image: url('../../../../assets/img/ranking/reward-item-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
 
     img {
-      width: 80%;
-      height: 80%;
+      width: 75%;
+      height: 75%;
     }
 
     .reward-icon-week {
@@ -302,7 +303,13 @@ export default {
   }
 }
 
+.reward-value {
+  text-align: center;
+}
+
 .reward-text {
+  text-align: center;
+  font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
   color: #fff;

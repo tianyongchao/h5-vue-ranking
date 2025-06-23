@@ -1,0 +1,3 @@
+@function px2rem($n) {
+  @return ($n * 20 / 750) * 1rem; //设计稿750宽
+}

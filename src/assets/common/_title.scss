@@ -1,0 +1,10 @@
+@import '../rem/rem.scss';
+@import '../base/variable';
+.header__title {
+  font-family: PingFangSC-Medium;
+  font-size: px2rem(42);
+  color: $font-main-color;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 500;
+}

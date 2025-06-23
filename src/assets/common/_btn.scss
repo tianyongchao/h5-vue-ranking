@@ -1,0 +1,27 @@
+@import '../rem/rem.scss';
+.footer__bnt-wrap {
+  text-align: center;
+  margin-bottom: px2rem(42);
+  .footer__bnt-plain {
+    border-radius: 8px;
+    border: px2rem(3) solid rgba(28,143,206,1);
+    font-family: SourceHanSansCN-Regular;
+    font-size: px2rem(36);
+    color: #1C8FCE;
+    letter-spacing: 0;
+    font-weight: 400;
+    min-width: px2rem(248);
+    margin-right: px2rem(28);
+
+  }
+  .footer__bnt-info {
+    border-radius: 8px;
+    font-family: SourceHanSansCN-Regular;
+    font-size: px2rem(36);
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-weight: 400;
+    min-width: px2rem(248);
+    background-color: #1C8FCE;
+  }
+}

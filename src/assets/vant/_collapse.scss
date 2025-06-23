@@ -1,0 +1,19 @@
+@import '../rem/rem.scss';
+.certificate__info {
+  /deep/ .van-collapse-item--border::after {
+    border: none;
+  }
+  /deep/ .van-cell {
+    margin-top: px2rem(16);
+    background-color: #F8F8F8;
+    border-radius: 8px;
+  }
+  /deep/ .van-collapse-item__content {
+    margin-top: px2rem(3);
+    border-radius: 8px;
+    background-color: #F8F8F8;
+  }
+  // /deep/ .van-hairline--top-bottom::after, .van-hairline-unset--top-bottom::after {
+  //   border: none;
+  // }
+}

@@ -1,0 +1,78 @@
+
+$theme-color:                       #1C8FCE;
+
+
+$white:                             #FFFFFF !default;
+$gray:                              #F8F8F8 !default;
+
+/*
+    font size
+*/
+$font-base:                  14px;
+
+/*
+    font color
+*/
+$font-main-color:                 #333333 !default;
+$font-vice-color:                 #666666 !default;
+$font-active-color:               $theme-color !default;
+$font-success-color:              #02CA71 !default;
+$font-white-color:                #FFFFFF;
+$linkColor:                       #4A90E2;
+
+/*
+    main bg color
+*/
+
+$bg-main-color:                 #D7ECF7 !default;
+$bg-main-white:                 #FFFFFF !default;
+$bg-main-gray:                  #F8F8F8 !default;
+
+
+$nav-color: #4A90E2;
+
+/*
+    btn bg color
+*/
+
+$bg-main-btn:                   #84CDE9;
+
+/*
+    border
+*/
+$borderColor:                   $theme-color;
+
+$border-gray-color:             #EBEBEB;
+
+$border-main-radius: 8px;
+
+
+
+@for $num from 0 to 200 {
+    @if ($num % 5) == 0 {
+        .mg-lf-#{$num} {
+            margin-left: #{$num}px!important;
+        }
+        .mg-rg-#{$num} {
+            margin-right: #{$num}px!important;
+        }
+        .mg-tp-#{$num} {
+            margin-top: #{$num}px!important;
+        }
+        .mg-bt-#{$num} {
+            margin-bottom: #{$num}px!important;
+        }
+        .pd-lf-#{$num} {
+            padding-left: #{$num}px!important;
+        }
+        .pd-rg-#{$num} {
+            padding-right: #{$num}px!important;
+        }
+        .pd-tp-#{$num} {
+            padding-top: #{$num}px!important;
+        }
+        .pd-bt-#{$num} {
+            padding-bottom: #{$num}px!important;
+        }
+    }
+}

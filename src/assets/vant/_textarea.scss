@@ -1,0 +1,25 @@
+@import '../rem/rem.scss';
+/deep/ .van-field__control {
+  margin-top: px2rem(10);
+  padding: px2rem(10);
+  background-color: #F8F8F8;
+}
+
+/deep/ .van-cell::after {
+  border-bottom: none
+}
+
+/deep/ .van-field {
+  display: block;
+  text-align: left;
+}
+
+/deep/ .van-field__label {
+  font-family: PingFangSC-Regular;
+  font-size: px2rem(28);
+  color: #666666;
+  letter-spacing: 0;
+  line-height: px2rem(45);
+  font-weight: 400;
+  width: 100%;
+}

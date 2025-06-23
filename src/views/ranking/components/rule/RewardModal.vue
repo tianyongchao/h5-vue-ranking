@@ -16,19 +16,19 @@
             <img src="../../../../assets/img/ranking/1st-text.png" alt="">
           </div>
           <div class="reward-wrap">
-            <div v-for="(i, index) in 3" >
-            <div  class="reward-item">
-              <img src="../../../../assets/img/ranking/reward-item-content.png" alt="">
-              <div v-if="index === 1" class="reward-icon-week">
-                <img src="../../../../assets/img/ranking/icon-week.png" alt="">
+            <div v-for="(i, index) in 3">
+              <div class="reward-item">
+                <img src="../../../../assets/img/ranking/reward-item-content.png" alt="">
+                <div v-if="index === 1" class="reward-icon-week">
+                  <img src="../../../../assets/img/ranking/icon-week.png" alt="">
+                </div>
+                <div v-if="index === 0" class="reward-icon-days">
+                  <div class="reward-icon-days-text">7天</div>
+                  <img src="../../../../assets/img/ranking/icon-days.png" alt="">
+                </div>
               </div>
-              <div v-if="index === 0" class="reward-icon-days">
-                <div class="reward-icon-days-text">7天</div>
-                <img src="../../../../assets/img/ranking/icon-days.png" alt="">
-              </div>
-            </div>
-            <div>专属奖励6字</div>
-            <div>价值123456</div>
+              <div class="reward-text">专属奖励6字</div>
+              <div>价值123456</div>
             </div>
           </div>
 
@@ -38,19 +38,19 @@
             <img src="../../../../assets/img/ranking/2st-text.png" alt="">
           </div>
           <div class="reward-wrap">
-            <div v-for="(i, index) in 3" >
-            <div  class="reward-item">
-              <img src="../../../../assets/img/ranking/reward-item-content.png" alt="">
-              <div v-if="index === 1" class="reward-icon-week">
-                <img src="../../../../assets/img/ranking/icon-week.png" alt="">
+            <div v-for="(i, index) in 3">
+              <div class="reward-item">
+                <img src="../../../../assets/img/ranking/reward-item-content.png" alt="">
+                <div v-if="index === 1" class="reward-icon-week">
+                  <img src="../../../../assets/img/ranking/icon-week.png" alt="">
+                </div>
+                <div v-if="index === 0" class="reward-icon-days">
+                  <div class="reward-icon-days-text">7天</div>
+                  <img src="../../../../assets/img/ranking/icon-days.png" alt="">
+                </div>
               </div>
-              <div v-if="index === 0" class="reward-icon-days">
-                <div class="reward-icon-days-text">7天</div>
-                <img src="../../../../assets/img/ranking/icon-days.png" alt="">
-              </div>
-            </div>
-            <div>专属奖励6字</div>
-            <div>价值123456</div>
+              <div class="reward-text">专属奖励6字</div>
+              <div>价值123456</div>
             </div>
           </div>
 
@@ -61,22 +61,22 @@
           </div>
           <div class="reward-wrap">
             <div>
-            <div  class="reward-item">
-              <img src="../../../../assets/img/ranking/reward-item-content.png" alt="">
-              <div v-if="index === 1" class="reward-icon-week">
-                <img src="../../../../assets/img/ranking/icon-week.png" alt="">
+              <div class="reward-item">
+                <img src="../../../../assets/img/ranking/reward-item-content.png" alt="">
+                <div v-if="index === 1" class="reward-icon-week">
+                  <img src="../../../../assets/img/ranking/icon-week.png" alt="">
+                </div>
+                <div v-if="index === 0" class="reward-icon-days">
+                  <div class="reward-icon-days-text">7天</div>
+                  <img src="../../../../assets/img/ranking/icon-days.png" alt="">
+                </div>
               </div>
-              <div v-if="index === 0" class="reward-icon-days">
-                <div class="reward-icon-days-text">7天</div>
-                <img src="../../../../assets/img/ranking/icon-days.png" alt="">
-              </div>
-            </div>
-            <div>专属奖励6字</div>
-            <div>价值123456</div>
+              <div class="reward-text">专属奖励6字</div>
+              <div>价值123456</div>
             </div>
             <div class="st3-wrap">
-              <div></div>
-              <div>专属奖励6字</div>
+              <div class="st3-item"></div>
+              <div class="reward-text">专属奖励6字</div>
               <div>价值123456</div>
             </div>
           </div>
@@ -147,6 +147,8 @@ export default {
       position: relative;
 
       .rule-title {
+        position: relative;
+        top: 15px;
         color: #fff;
         font-size: 38px;
       }
@@ -189,7 +191,7 @@ export default {
 .center-tab {
   margin: 0 auto;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 70px;
   width: 60%;
   padding: 2px;
   display: flex;
@@ -231,9 +233,10 @@ export default {
 
 .reward-title {
   text-align: center;
+
   img {
-    width: 121px;
-    height: 40px;
+    width: 201px;
+    // height: 70px;
   }
 }
 
@@ -252,10 +255,12 @@ export default {
     background-image: url('../../../../assets/img/ranking/reward-item-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
+
     img {
       width: 80%;
       height: 80%;
     }
+
     .reward-icon-week {
       width: 88px;
       height: 50px;
@@ -263,6 +268,7 @@ export default {
       right: -20px;
       position: absolute;
     }
+
     .reward-icon-days {
       width: 88px;
       height: 50px;
@@ -270,6 +276,7 @@ export default {
       right: -10px;
       position: absolute;
     }
+
     .reward-icon-days-text {
       font-size: 22px;
       color: #fff;
@@ -284,8 +291,27 @@ export default {
 .item-ranking-last {
   justify-content: space-between;
 }
+
 .st3-wrap {
   flex: 0.8;
-  border: 1px solid #000;
+  .st3-item {
+    background-image: url('../../../../assets/img/ranking/st3-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 180px;
+  }
+}
+
+.reward-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  /* 文字颜色 */
+  text-shadow:
+    0 0 6px #e7d3ff,
+    0 0 12px #d6aaff,
+    0 0 24px #ffffff;
+  background: rgba(255, 240, 255, 0.3);
+  /* 模拟淡粉背景 */
 }
 </style>

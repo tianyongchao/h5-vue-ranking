@@ -132,6 +132,8 @@ export default {
   }
 
   .rule-content {
+    max-height: 80vh;
+    overflow-y: auto;
     background-image: url(../../../../assets/img/ranking/rule-bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -299,7 +301,7 @@ export default {
     background-image: url('../../../../assets/img/ranking/st3-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 180px;
+    height: 150px;
   }
 }
 
